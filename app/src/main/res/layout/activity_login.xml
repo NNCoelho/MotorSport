@@ -46,7 +46,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/username">
+            android:hint="@string/usernameLogin">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -59,7 +59,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/password"
+            android:hint="@string/passwordLogin"
             app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -87,7 +87,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
             android:background="#212121"
-            android:text="@string/go"
+            android:text="@string/login"
             android:textColor="#FFFFFF" />
 
         <Button
