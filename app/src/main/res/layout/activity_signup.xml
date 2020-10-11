@@ -1,42 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp"
+    android:padding="16dp"
     tools:context=".SignupActivity">
 
     <ImageView
+        android:id="@+id/imageMoto"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:layout_marginTop="30dp"
         android:contentDescription="@string/app_name"
         android:src="@drawable/motocaferacer" />
 
     <TextView
+        android:id="@+id/textWelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/imageMoto"
         android:fontFamily="@font/bungee"
+        android:gravity="start"
+        android:layout_marginTop="-16dp"
         android:text="@string/welcome"
         android:textColor="#212121"
         android:textSize="40sp" />
 
     <TextView
+        android:id="@+id/textSignup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/textWelcome"
+        android:gravity="start"
         android:text="@string/signup_to_start_your_new_journey"
         android:textSize="18sp" />
 
     <LinearLayout
+        android:id="@+id/layoutSignup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/textSignup"
+        android:gravity="center"
         android:orientation="vertical">
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/name"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -49,7 +58,6 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/Username"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -63,7 +71,6 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/email"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -76,7 +83,6 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/phoneNo"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -89,7 +95,6 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/password"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -108,15 +113,19 @@
         android:id="@+id/btnSignup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/layoutSignup"
         android:background="#212121"
+        android:gravity="center"
         android:text="@string/signup"
         android:textColor="#FFFFFF" />
 
     <Button
-        android:id="@+id/btnLogin"
+        android:id="@+id/btnAlready"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSignup"
         android:background="#FFFFFF"
+        android:gravity="center"
         android:text="@string/already_have_an_account_login" />
 
-</LinearLayout>
+</RelativeLayout>

@@ -5,22 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp"
+    android:padding="16dp"
     tools:context=".LoginActivity">
 
     <ImageView
-        android:id="@+id/caferacerLogin"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="start"
         android:contentDescription="@string/app_name"
         android:src="@drawable/motocaferacer"
         android:transitionName="logoImage"
         tools:targetApi="lollipop" />
 
     <TextView
-        android:id="@+id/welcomeMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="start"
         android:fontFamily="@font/bungee"
         android:text="@string/hello_there_welcome_back"
         android:textColor="#212121"
@@ -29,21 +30,21 @@
         tools:targetApi="lollipop" />
 
     <TextView
-        android:id="@+id/signInMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="start"
         android:text="@string/login_to_continue"
         android:textSize="18sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
         android:orientation="vertical">
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/username"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -55,7 +56,6 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/password"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -69,7 +69,6 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/forgetPass"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
@@ -80,11 +79,9 @@
             tools:targetApi="lollipop" />
 
         <Button
-            android:id="@+id/btnGo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
             android:background="#212121"
             android:text="@string/login"
             android:textColor="#FFFFFF" />
@@ -93,8 +90,7 @@
             android:id="@+id/btnNewUser"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_margin="5dp"
+            android:layout_gravity="center"
             android:background="#FFFFFF"
             android:elevation="0dp"
             android:text="@string/new_user_sign_up"

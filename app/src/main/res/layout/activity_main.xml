@@ -30,7 +30,7 @@
         android:fontFamily="@font/bangers"
         android:gravity="center"
         android:text="@string/motorsport_club"
-        android:textSize="57sp"
+        android:textSize="54sp"
         android:transitionName="logoText"
         app:layout_constraintBottom_toTopOf="@id/motorsportSlogan"
         app:layout_constraintEnd_toEndOf="parent"
