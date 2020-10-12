@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "879605565689",
+    "firebase_url": "https://motorsport-4708e.firebaseio.com",
+    "project_id": "motorsport-4708e",
+    "storage_bucket": "motorsport-4708e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:879605565689:android:1eea3383c39bafbc4ffa28",
+        "android_client_info": {
+          "package_name": "com.coelho.motorsport"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "879605565689-6o0mn8ps75vgqb55rvg9ah1c3ffr4a8q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.coelho.motorsport",
+            "certificate_hash": "0bc584aff0237efb762be41bdb0b2c989dc6b646"
+          }
+        },
+        {
+          "client_id": "879605565689-rgg16k156cnjdu88f1b5e21kkcka5v85.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkHnrvOazMYbyfn0bvhPgQ_30c-w1xuKQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "879605565689-rgg16k156cnjdu88f1b5e21kkcka5v85.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
