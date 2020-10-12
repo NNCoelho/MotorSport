@@ -9,16 +9,18 @@
     tools:context=".LoginActivity">
 
     <ImageView
+        android:id="@+id/imageMoto"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="10dp"
         android:layout_gravity="start"
+        android:layout_marginTop="10dp"
         android:contentDescription="@string/app_name"
         android:src="@drawable/motocaferacer"
-        android:transitionName="logoImage"
+        android:transitionName="logo_image"
         tools:targetApi="lollipop" />
 
     <TextView
+        android:id="@+id/welcomeBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="start"
@@ -26,29 +28,35 @@
         android:text="@string/hello_there_welcome_back"
         android:textColor="#212121"
         android:textSize="40sp"
-        android:transitionName="logoText"
+        android:transitionName="welcome_text"
         tools:targetApi="lollipop" />
 
     <TextView
+        android:id="@+id/loginContinue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="start"
         android:text="@string/login_to_continue"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:transitionName="user_message"
+        tools:targetApi="lollipop" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:orientation="vertical">
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/username"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/usernameLogin">
+            android:hint="@string/usernameLogin"
+            android:transitionName="username"
+            tools:targetApi="lollipop">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -56,11 +64,14 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/passwordLogin"
-            app:passwordToggleEnabled="true">
+            android:transitionName="password"
+            app:passwordToggleEnabled="true"
+            tools:targetApi="lollipop">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -69,6 +80,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
+            android:id="@+id/btnForgetPass"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
@@ -79,12 +91,15 @@
             tools:targetApi="lollipop" />
 
         <Button
+            android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="#212121"
             android:text="@string/login"
-            android:textColor="#FFFFFF" />
+            android:textColor="#FFFFFF"
+            android:transitionName="btn_login_signup"
+            tools:targetApi="lollipop" />
 
         <Button
             android:id="@+id/btnNewUser"
@@ -94,6 +109,7 @@
             android:background="#FFFFFF"
             android:elevation="0dp"
             android:text="@string/new_user_sign_up"
+            android:transitionName="login_signup_new_user"
             tools:targetApi="lollipop" />
 
     </LinearLayout>

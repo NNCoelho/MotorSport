@@ -5,15 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp"
+    android:padding="16dp"
     tools:context=".SignupActivity">
 
     <ImageView
         android:id="@+id/imageMoto"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="10dp"
         android:contentDescription="@string/app_name"
-        android:src="@drawable/motocaferacer" />
+        android:src="@drawable/motocaferacer"
+        android:transitionName="logo_image"
+        tools:targetApi="lollipop" />
 
     <TextView
         android:id="@+id/textWelcome"
@@ -24,7 +28,9 @@
         android:gravity="start"
         android:text="@string/welcome"
         android:textColor="#212121"
-        android:textSize="40sp" />
+        android:textSize="40sp"
+        android:transitionName="welcome_text"
+        tools:targetApi="lollipop" />
 
     <TextView
         android:id="@+id/textSignup"
@@ -32,12 +38,16 @@
         android:layout_height="wrap_content"
         android:gravity="start"
         android:text="@string/signup_to_start_your_new_journey"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:transitionName="user_message"
+        tools:targetApi="lollipop" />
 
     <LinearLayout
         android:id="@+id/layoutSignup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -58,7 +68,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/usernameSignup"
-            app:counterMaxLength="15">
+            android:transitionName="username"
+            app:counterMaxLength="15"
+            tools:targetApi="lollipop">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -95,7 +107,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/passwordSignup"
-            app:passwordToggleEnabled="true">
+            android:transitionName="password"
+            app:passwordToggleEnabled="true"
+            tools:targetApi="lollipop">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -112,7 +126,9 @@
         android:background="#212121"
         android:gravity="center"
         android:text="@string/signup"
-        android:textColor="#FFFFFF" />
+        android:textColor="#FFFFFF"
+        android:transitionName="btn_login_signup"
+        tools:targetApi="lollipop" />
 
     <Button
         android:id="@+id/btnAlready"
@@ -120,6 +136,8 @@
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
         android:gravity="center"
-        android:text="@string/already_have_an_account_login" />
+        android:text="@string/already_have_an_account_login"
+        android:transitionName="login_signup_new_user"
+        tools:targetApi="lollipop" />
 
 </LinearLayout>
