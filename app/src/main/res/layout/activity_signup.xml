@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
+    android:padding="20dp"
     tools:context=".SignupActivity">
 
     <ImageView
         android:id="@+id/imageMoto"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="30dp"
         android:contentDescription="@string/app_name"
         android:src="@drawable/motocaferacer" />
 
@@ -20,10 +19,9 @@
         android:id="@+id/textWelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageMoto"
+        android:layout_marginTop="-16dp"
         android:fontFamily="@font/bungee"
         android:gravity="start"
-        android:layout_marginTop="-16dp"
         android:text="@string/welcome"
         android:textColor="#212121"
         android:textSize="40sp" />
@@ -32,7 +30,6 @@
         android:id="@+id/textSignup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textWelcome"
         android:gravity="start"
         android:text="@string/signup_to_start_your_new_journey"
         android:textSize="18sp" />
@@ -41,7 +38,6 @@
         android:id="@+id/layoutSignup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textSignup"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -113,7 +109,6 @@
         android:id="@+id/btnSignup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/layoutSignup"
         android:background="#212121"
         android:gravity="center"
         android:text="@string/signup"
@@ -123,9 +118,8 @@
         android:id="@+id/btnAlready"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btnSignup"
         android:background="#FFFFFF"
         android:gravity="center"
         android:text="@string/already_have_an_account_login" />
 
-</RelativeLayout>
+</LinearLayout>
