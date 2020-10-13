@@ -137,5 +137,13 @@ public class SignupActivity extends AppCompatActivity {
                 reference.child(name).setValue(helperClass);
             }
         });
+
+        // Button to return to Login
+        regToLoginBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 }
