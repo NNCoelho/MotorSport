@@ -3,6 +3,7 @@ package com.coelho.motorsport;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -121,6 +122,8 @@ public class SignupActivity extends AppCompatActivity {
 
                 if (!validateName() | !validateUsername() | !validateEmail() | !validatePhoneNo() | !validatePassword()) {
                     return;
+                } else {
+                    Toast.makeText(SignupActivity.this, "User as been successfully registered", Toast.LENGTH_SHORT).show();
                 }
 
                 // Get all the values
