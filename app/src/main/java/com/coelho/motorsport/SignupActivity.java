@@ -135,7 +135,7 @@ public class SignupActivity extends AppCompatActivity {
                 if (!validateName() | !validateUsername() | !validateEmail() | !validateLocation() | !validateMotorcycle() | !validatePassword()) {
                     return;
                 } else {
-                    Toast.makeText(SignupActivity.this, "User as been successfully registered", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SignupActivity.this, "User Successfully Registered on the Database", Toast.LENGTH_SHORT).show();
                 }
 
                 // Get all the values
@@ -146,11 +146,11 @@ public class SignupActivity extends AppCompatActivity {
                 String password = Objects.requireNonNull(regPassword.getEditText()).getText().toString();
 
                 UserHelperClass helperClass = new UserHelperClass(name, username, email, phoneNo, password);
-                reference.child(name).setValue(helperClass);
+                reference.child(username).setValue(helperClass);
             }
         });
 
-        // Button to return to Login
+        // Return to Login
         regToLoginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
