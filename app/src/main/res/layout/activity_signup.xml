@@ -170,6 +170,7 @@
             android:gravity="center"
             android:text="@string/signup"
             android:textColor="#FFFFFF"
+            android:textSize="16sp"
             android:transitionName="btn_login_signup"
             tools:targetApi="lollipop" />
 
@@ -177,10 +178,12 @@
             android:id="@+id/btnToLoginFromSignup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FED699"
+            android:layout_marginTop="6dp"
+            android:background="#CE9560"
             android:gravity="center"
             android:text="@string/already_have_an_account_login"
-            android:transitionName="login_signup_new_user"
+            android:textSize="16sp"
+            android:transitionName="signup_new_user"
             tools:targetApi="lollipop" />
 
     </LinearLayout>

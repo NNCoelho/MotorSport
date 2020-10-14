@@ -105,6 +105,7 @@
             android:background="#212121"
             android:text="@string/login"
             android:textColor="#FFFFFF"
+            android:textSize="16sp"
             android:transitionName="btn_login_signup"
             tools:targetApi="lollipop" />
 
@@ -113,10 +114,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:background="#FED699"
+            android:layout_marginTop="6dp"
+            android:background="#CE9560"
             android:elevation="0dp"
             android:text="@string/new_user_sign_up"
-            android:transitionName="login_signup_new_user"
+            android:textSize="16sp"
+            android:transitionName="signup_new_user"
             tools:targetApi="lollipop" />
 
     </LinearLayout>
