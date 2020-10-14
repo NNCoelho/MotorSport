@@ -142,10 +142,11 @@ public class SignupActivity extends AppCompatActivity {
                 String name = Objects.requireNonNull(regName.getEditText()).getText().toString();
                 String username = Objects.requireNonNull(regUsername.getEditText()).getText().toString();
                 String email = Objects.requireNonNull(regEmail.getEditText()).getText().toString();
-                String phoneNo = Objects.requireNonNull(regLocation.getEditText()).getText().toString();
+                String location = Objects.requireNonNull(regLocation.getEditText()).getText().toString();
+                String motorcycle = Objects.requireNonNull(regMoto.getEditText()).getText().toString();
                 String password = Objects.requireNonNull(regPassword.getEditText()).getText().toString();
 
-                UserHelperClass helperClass = new UserHelperClass(name, username, email, phoneNo, password);
+                UserHelperClass helperClass = new UserHelperClass(name, username, email, location, motorcycle, password);
                 reference.child(username).setValue(helperClass);
             }
         });

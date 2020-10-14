@@ -2,16 +2,17 @@ package com.coelho.motorsport;
 
 public class UserHelperClass {
 
-    String name, username, email, PhoneNo, password;
+    String name, username, email, location, motorcycle, password;
 
     public UserHelperClass() {
     }
 
-    public UserHelperClass(String name, String username, String email, String phoneNo, String password) {
+    public UserHelperClass(String name, String username, String email, String location, String motorcycle, String password) {
         this.name = name;
         this.username = username;
         this.email = email;
-        PhoneNo = phoneNo;
+        this.location = location;
+        this.motorcycle = motorcycle;
         this.password = password;
     }
 
@@ -39,12 +40,20 @@ public class UserHelperClass {
         this.email = email;
     }
 
-    public String getPhoneNo() {
-        return PhoneNo;
+    public String getLocation() {
+        return location;
     }
 
-    public void setPhoneNo(String phoneNo) {
-        PhoneNo = phoneNo;
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public String getMotorcycle() {
+        return motorcycle;
+    }
+
+    public void setMotorcycle(String motorcycle) {
+        this.motorcycle = motorcycle;
     }
 
     public String getPassword() {
