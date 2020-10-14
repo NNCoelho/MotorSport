@@ -9,14 +9,14 @@
     tools:ignore="Overdraw">
 
     <ImageView
-        android:id="@+id/caferacer"
+        android:id="@+id/imageMoto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="120dp"
         android:adjustViewBounds="true"
         android:contentDescription="@string/app_name"
         android:src="@drawable/motocaferacer"
-        android:transitionName="logoImage"
+        android:transitionName="logo_image"
         app:layout_constraintBottom_toTopOf="@+id/motorsportTitle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,11 +32,11 @@
         android:includeFontPadding="false"
         android:text="@string/motorsport_club"
         android:textSize="57sp"
-        android:transitionName="logoText"
+        android:transitionName="welcome_text"
         app:layout_constraintBottom_toTopOf="@id/motorsportSlogan"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/caferacer"
+        app:layout_constraintTop_toBottomOf="@+id/imageMoto"
         tools:targetApi="lollipop" />
 
     <TextView

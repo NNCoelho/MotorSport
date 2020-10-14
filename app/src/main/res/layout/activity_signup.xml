@@ -104,7 +104,7 @@
                 android:orientation="horizontal">
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/location"
+                    android:id="@+id/signupLocation"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -117,7 +117,7 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/motorcycle"
+                    android:id="@+id/signupMotorcycle"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -162,10 +162,10 @@
             tools:targetApi="lollipop" />
 
         <Button
-            android:id="@+id/btnLoginSignup"
+            android:id="@+id/btnToLoginFromSignup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFFFFF"
+            android:background="#FED699"
             android:gravity="center"
             android:text="@string/already_have_an_account_login"
             android:transitionName="login_signup_new_user"

@@ -32,8 +32,8 @@ public class LoginActivity extends AppCompatActivity {
         imageMoto = findViewById(R.id.imageMoto);
         welcomeText = findViewById(R.id.welcomeBack);
         loginMessage = findViewById(R.id.loginContinue);
-        username = findViewById(R.id.username);
-        password = findViewById(R.id.password);
+        username = findViewById(R.id.usernameLogin);
+        password = findViewById(R.id.passwordLogin);
 
         btnNewUser.setOnClickListener(new View.OnClickListener() {
             @Override

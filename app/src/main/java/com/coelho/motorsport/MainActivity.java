@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         botttomAnim = AnimationUtils.loadAnimation(this, R.anim.bottom_animation);
 
         // HOOKS
-        motoCaferacer = findViewById(R.id.caferacer);
+        motoCaferacer = findViewById(R.id.imageMoto);
         logo = findViewById(R.id.motorsportTitle);
         slogan = findViewById(R.id.motorsportSlogan);
 

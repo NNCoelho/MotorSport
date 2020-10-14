@@ -119,11 +119,11 @@ public class SignupActivity extends AppCompatActivity {
         regName = findViewById(R.id.signupFullname);
         regUsername = findViewById(R.id.signupUsername);
         regEmail = findViewById(R.id.signupEmail);
-        regLocation = findViewById(R.id.location);
-        regMoto = findViewById(R.id.motorcycle);
+        regLocation = findViewById(R.id.signupLocation);
+        regMoto = findViewById(R.id.signupMotorcycle);
         regPassword = findViewById(R.id.signupPassword);
         regBtn = findViewById(R.id.btnSignup);
-        regToLoginBtn = findViewById(R.id.btnLoginSignup);
+        regToLoginBtn = findViewById(R.id.btnToLoginFromSignup);
 
         // Save data in Firebase on button click
         regBtn.setOnClickListener(new View.OnClickListener() {
