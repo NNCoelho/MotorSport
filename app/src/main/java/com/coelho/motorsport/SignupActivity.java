@@ -16,7 +16,7 @@ import java.util.Objects;
 public class SignupActivity extends AppCompatActivity {
 
     // Variables
-    TextInputLayout regName, regUsername, regEmail, regPhoneNo, regPassword;
+    TextInputLayout regName, regUsername, regEmail, regLocation, regMoto, regPassword;
     Button regBtn, regToLoginBtn;
 
     // Firebase connection
@@ -71,13 +71,24 @@ public class SignupActivity extends AppCompatActivity {
         }
     }
 
-    private Boolean validatePhoneNo() {
-        String val = Objects.requireNonNull(regPhoneNo.getEditText()).getText().toString();
+    private Boolean validateLocation() {
+        String val = Objects.requireNonNull(regLocation.getEditText()).getText().toString();
         if (val.isEmpty()) {
-            regPhoneNo.setError("Field cannot be empty");
+            regLocation.setError("Field cannot be empty");
             return false;
         } else {
-            regPhoneNo.setError(null);
+            regLocation.setError(null);
+            return true;
+        }
+    }
+
+    private Boolean validateMotorcycle() {
+        String val = Objects.requireNonNull(regMoto.getEditText()).getText().toString();
+        if (val.isEmpty()) {
+            regMoto.setError("Field cannot be empty");
+            return false;
+        } else {
+            regMoto.setError(null);
             return true;
         }
     }
@@ -108,7 +119,8 @@ public class SignupActivity extends AppCompatActivity {
         regName = findViewById(R.id.signupFullname);
         regUsername = findViewById(R.id.signupUsername);
         regEmail = findViewById(R.id.signupEmail);
-        regPhoneNo = findViewById(R.id.signupPhone);
+        regLocation = findViewById(R.id.location);
+        regMoto = findViewById(R.id.motorcycle);
         regPassword = findViewById(R.id.signupPassword);
         regBtn = findViewById(R.id.btnSignup);
         regToLoginBtn = findViewById(R.id.btnLoginSignup);
@@ -120,7 +132,7 @@ public class SignupActivity extends AppCompatActivity {
                 rootNode = FirebaseDatabase.getInstance();
                 reference = rootNode.getReference("users");
 
-                if (!validateName() | !validateUsername() | !validateEmail() | !validatePhoneNo() | !validatePassword()) {
+                if (!validateName() | !validateUsername() | !validateEmail() | !validateLocation() | !validateMotorcycle() | !validatePassword()) {
                     return;
                 } else {
                     Toast.makeText(SignupActivity.this, "User as been successfully registered", Toast.LENGTH_SHORT).show();
@@ -130,7 +142,7 @@ public class SignupActivity extends AppCompatActivity {
                 String name = Objects.requireNonNull(regName.getEditText()).getText().toString();
                 String username = Objects.requireNonNull(regUsername.getEditText()).getText().toString();
                 String email = Objects.requireNonNull(regEmail.getEditText()).getText().toString();
-                String phoneNo = Objects.requireNonNull(regPhoneNo.getEditText()).getText().toString();
+                String phoneNo = Objects.requireNonNull(regLocation.getEditText()).getText().toString();
                 String password = Objects.requireNonNull(regPassword.getEditText()).getText().toString();
 
                 UserHelperClass helperClass = new UserHelperClass(name, username, email, phoneNo, password);
