@@ -60,8 +60,9 @@
             android:padding="16dp">
 
             <com.google.android.material.card.MaterialCardView
+                android:id="@+id/locationCard"
                 android:layout_width="0dp"
-                android:layout_height="125dp"
+                android:layout_height="120dp"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 app:cardBackgroundColor="#fece2f"
@@ -96,8 +97,9 @@
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
+                android:id="@+id/motorcycleCard"
                 android:layout_width="0dp"
-                android:layout_height="125dp"
+                android:layout_height="120dp"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 app:cardBackgroundColor="#fece2f"
@@ -140,6 +142,7 @@
             android:padding="16dp">
 
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/profileFullname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="3dp"
@@ -150,10 +153,14 @@
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/user"
                     android:drawablePadding="10dp"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLines="1"
                     android:text="@string/nuno_coelho" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/profileEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="3dp"
@@ -164,6 +171,9 @@
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/email"
                     android:drawablePadding="10dp"
+                    android:inputType="textEmailAddress"
+                    android:lines="1"
+                    android:maxLines="1"
                     android:text="@string/email_gmail_com" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -173,6 +183,7 @@
                 android:orientation="horizontal">
 
                 <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/profileLocation"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="3dp">
@@ -183,10 +194,14 @@
                         android:drawableStart="@drawable/location"
                         android:drawablePadding="10dp"
                         android:hint="@string/location"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
                         android:text="@string/leiria" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/profileMotorcycle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="3dp">
@@ -197,13 +212,16 @@
                         android:drawableStart="@drawable/moto"
                         android:drawablePadding="10dp"
                         android:hint="@string/motorcycle"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
                         android:text="@string/ktm_1090" />
                 </com.google.android.material.textfield.TextInputLayout>
 
             </LinearLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/password"
+                android:id="@+id/profilePassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="3dp"
@@ -213,14 +231,17 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ?!#$%"
                     android:drawableStart="@drawable/password"
                     android:drawablePadding="10dp"
                     android:inputType="textPassword"
+                    android:lines="1"
+                    android:maxLines="1"
                     android:text="@string/abc123" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
-                android:id="@+id/btn_updateProfile"
+                android:id="@+id/btnUpdateProfile"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#fece2f"
