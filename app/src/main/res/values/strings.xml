@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">MotorSport</string>
     <string name="motorsport_club">Motorsport Club</string>
-    <string name="nation_wide_motorcycle_club">Nation wide Motorcycle Club</string>
+    <string name="nation_wide_motorcycle_club">Nation Wide Motorcycle Club</string>
     <string name="hello_there_welcome_back">Hello there, Welcome back</string>
     <string name="login_to_continue">Login to Continue</string>
     <string name="usernameLogin">Username</string>
@@ -18,4 +18,6 @@
     <string name="signup">Signup</string>
     <string name="already_have_an_account_login">Already have an account? Login</string>
     <string name="login">Login</string>
+    <string name="nuno_coelho">Nuno Coelho</string>
+    <string name="coelho">Coelho</string>
 </resources>

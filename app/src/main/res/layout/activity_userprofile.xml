@@ -14,12 +14,37 @@
         tools:ignore="UselessParent">
 
         <ImageView
+            android:id="@+id/profile_image"
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_centerVertical="true"
             android:contentDescription="@string/app_name"
             android:src="@drawable/owlpiston" />
 
+        <TextView
+            android:id="@+id/full_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/profile_image"
+            android:fontFamily="@font/bungee"
+            android:includeFontPadding="false"
+            android:text="@string/nuno_coelho"
+            android:textColor="#212121"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/full_name"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/profile_image"
+            android:includeFontPadding="false"
+            android:text="@string/coelho"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
     </RelativeLayout>
 

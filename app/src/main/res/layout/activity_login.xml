@@ -13,7 +13,6 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_gravity="start"
-        android:layout_marginTop="10dp"
         android:contentDescription="@string/app_name"
         android:src="@drawable/motocaferacer"
         android:transitionName="logo_image"
@@ -25,6 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="start"
         android:fontFamily="@font/bungee"
+        android:includeFontPadding="false"
         android:text="@string/hello_there_welcome_back"
         android:textColor="#212121"
         android:textSize="40sp"
@@ -36,6 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="start"
+        android:includeFontPadding="false"
         android:text="@string/login_to_continue"
         android:textSize="18sp"
         android:transitionName="user_message"
@@ -45,8 +46,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         android:orientation="vertical">
 
         <com.google.android.material.textfield.TextInputLayout

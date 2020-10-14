@@ -18,7 +18,6 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_gravity="start"
-            android:layout_marginTop="10dp"
             android:contentDescription="@string/app_name"
             android:src="@drawable/motocaferacer"
             android:transitionName="logo_image"
@@ -27,12 +26,13 @@
         <TextView
             android:id="@+id/textWelcome"
             android:layout_width="wrap_content"
-            android:layout_height="72dp"
+            android:layout_height="wrap_content"
             android:fontFamily="@font/bungee"
             android:gravity="start"
+            android:includeFontPadding="false"
             android:text="@string/welcome"
             android:textColor="#212121"
-            android:textSize="40sp"
+            android:textSize="42sp"
             android:transitionName="welcome_text"
             tools:targetApi="lollipop" />
 
@@ -41,6 +41,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="start"
+            android:includeFontPadding="false"
             android:text="@string/signup_to_start_your_new_journey"
             android:textSize="18sp"
             android:transitionName="user_message"
@@ -50,8 +51,8 @@
             android:id="@+id/layoutSignup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:layout_marginBottom="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
             android:gravity="center"
             android:orientation="vertical">
 
