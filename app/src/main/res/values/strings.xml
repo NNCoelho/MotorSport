@@ -24,8 +24,10 @@
     <string name="ktm_1090">KTM 1090</string>
     <string name="email_gmail_com">email@gmail.com</string>
     <string name="location">Location</string>
-    <string name="motorcycle">Motorcycle</string>
     <string name="password">Password</string>
     <string name="abc123">abc123</string>
     <string name="update">Update</string>
+    <string name="username">username</string>
+    <string name="localization">Localization</string>
+    <string name="motorcycle">Motorcycle</string>
 </resources>
