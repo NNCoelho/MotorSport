@@ -67,7 +67,7 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-    // Login event
+    // LOGIN EVENT
     private Boolean validateUsername() {
         String val = Objects.requireNonNull(username.getEditText()).getText().toString();
 
@@ -143,7 +143,7 @@ public class LoginActivity extends AppCompatActivity {
                         password.requestFocus();
                     }
                 } else {
-                    username.setError("No such user exist in our database");
+                    username.setError("No such user exists in the database");
                     username.requestFocus();
                 }
             }

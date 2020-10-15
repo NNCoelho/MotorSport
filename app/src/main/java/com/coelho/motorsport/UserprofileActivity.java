@@ -12,7 +12,7 @@ import java.util.Objects;
 
 public class UserprofileActivity extends AppCompatActivity {
 
-    // Variables
+    // VARIABLES
     TextView fullName, userName, location, motorcycle;
     TextInputLayout fullNameInput, emailInput, motorcycleInput, passwordInput;
 
@@ -21,7 +21,7 @@ public class UserprofileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_userprofile);
 
-        // Hooks
+        // HOOKS
         fullName = findViewById(R.id.profileFullName);
         userName = findViewById(R.id.profileUsername);
         location = findViewById(R.id.profileLocalization);
@@ -31,7 +31,7 @@ public class UserprofileActivity extends AppCompatActivity {
         motorcycleInput = findViewById(R.id.profile_Motorcycle);
         passwordInput = findViewById(R.id.profile_Password);
 
-        // Show all data
+        // SHOW ALL DATA
         showAllUserData();
     }
 
@@ -53,6 +53,5 @@ public class UserprofileActivity extends AppCompatActivity {
         Objects.requireNonNull(emailInput.getEditText()).setText(user_email);
         Objects.requireNonNull(motorcycleInput.getEditText()).setText(user_motorcycle);
         Objects.requireNonNull(passwordInput.getEditText()).setText(user_password);
-
     }
 }

@@ -15,15 +15,15 @@ import java.util.Objects;
 
 public class SignupActivity extends AppCompatActivity {
 
-    // Variables
+    // VARIABLES
     TextInputLayout regName, regUsername, regEmail, regLocation, regMoto, regPassword;
     Button regBtn, regToLoginBtn;
 
-    // Firebase connection
+    // FIREABSE CONNECTION
     FirebaseDatabase rootNode;
     DatabaseReference reference;
 
-    // Fields validation
+    // FIELDS VALIDATION
     private Boolean validateName() {
         String val = Objects.requireNonNull(regName.getEditText()).getText().toString();
         if (val.isEmpty()) {
@@ -115,7 +115,7 @@ public class SignupActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
-        // Hooks
+        // HOOKS
         regName = findViewById(R.id.signupFullname);
         regUsername = findViewById(R.id.signupUsername);
         regEmail = findViewById(R.id.signupEmail);
@@ -125,7 +125,7 @@ public class SignupActivity extends AppCompatActivity {
         regBtn = findViewById(R.id.btnSignup);
         regToLoginBtn = findViewById(R.id.btnToLoginFromSignup);
 
-        // Save data in Firebase on button click
+        // SAVE DATA IN FIREBASE ON BUTTON CLICK
         regBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -151,7 +151,7 @@ public class SignupActivity extends AppCompatActivity {
             }
         });
 
-        // Return to Login
+        // RETURN TO LOGIN
         regToLoginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

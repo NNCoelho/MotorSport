@@ -15,7 +15,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    private static final int SPLASH_SCREEN = 5000;
+    private static final int SPLASH_SCREEN = 3600;
 
     // VARIABLES
     Animation topAnim, botttomAnim;
@@ -47,8 +47,8 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, LoginActivity.class);
 
                 Pair[] pairs = new Pair[2];
-                pairs[0] = new Pair<View, String>(motoCaferacer, "logoImage");
-                pairs[1] = new Pair<View, String>(logo, "logoText");
+                pairs[0] = new Pair<View, String>(motoCaferacer, "logo_image");
+                pairs[1] = new Pair<View, String>(logo, "welcome_text");
 
                 if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
                     ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(MainActivity.this, pairs);
