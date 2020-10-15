@@ -148,15 +148,16 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/profile_FullName"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/full_name">
+                android:layout_height="wrap_content">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/user"
                     android:drawablePadding="10dp"
+                    android:hint="@string/full_name"
                     android:inputType="text"
                     android:lines="1"
                     android:maxLines="1" />
@@ -164,65 +165,86 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/profile_Email"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/email">
+                android:layout_height="wrap_content">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/email"
                     android:drawablePadding="10dp"
+                    android:hint="@string/email"
                     android:inputType="textEmailAddress"
                     android:lines="1"
                     android:maxLines="1" />
             </com.google.android.material.textfield.TextInputLayout>
 
+            <!-- Layouts of Location and Motorcycle -->
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
                 android:orientation="horizontal">
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/profile_Localization"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                <!-- Location -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:layout_weight="1">
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="180dp"
-                        android:layout_height="wrap_content"
-                        android:drawableStart="@drawable/location"
-                        android:drawablePadding="10dp"
-                        android:hint="@string/localization"
-                        android:inputType="text"
-                        android:lines="1"
-                        android:maxLines="1" />
-                </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/profile_Localization"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/profile_Motorcycle"
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="165dp"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/location"
+                            android:drawablePadding="10dp"
+                            android:hint="@string/localization"
+                            android:inputType="text"
+                            android:lines="1"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <!-- Motorcycle -->
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="3dp">
+                    android:layout_gravity="end">
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="180dp"
-                        android:layout_height="wrap_content"
-                        android:drawableStart="@drawable/moto"
-                        android:drawablePadding="10dp"
-                        android:hint="@string/motorcycle"
-                        android:inputType="text"
-                        android:lines="1"
-                        android:maxLines="1" />
-                </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/profile_Motorcycle"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="190dp"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/moto"
+                            android:drawablePadding="10dp"
+                            android:hint="@string/motorcycle"
+                            android:inputType="text"
+                            android:lines="1"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
 
             </LinearLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/profile_Password"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/password"
                 app:passwordToggleEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -231,6 +253,7 @@
                     android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ?!#$%"
                     android:drawableStart="@drawable/password"
                     android:drawablePadding="10dp"
+                    android:hint="@string/password"
                     android:inputType="textPassword"
                     android:lines="1"
                     android:maxLines="1" />
