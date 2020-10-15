@@ -67,14 +67,6 @@ public class UserprofileActivity extends AppCompatActivity {
         Objects.requireNonNull(passwordInput.getEditText()).setText(_PASSWORD);
     }
 
-    public void update(View view) {
-        if (isNameChanged() || isEmailChanged() || isMotorcycleChanged() || isPasswordChanged()) {
-            Toast.makeText(this, "Data has been Updated Successfully", Toast.LENGTH_LONG).show();
-        } else {
-            Toast.makeText(this, "Data is the Same and therefore Cannot be Updated", Toast.LENGTH_LONG).show();
-        }
-    }
-
     private boolean isNameChanged() {
         if (!_NAME.equals(Objects.requireNonNull(fullNameInput.getEditText()).getText().toString())) {
             reference.child(_USERNAME).child("name").setValue(fullNameInput.getEditText().getText().toString());
@@ -111,6 +103,14 @@ public class UserprofileActivity extends AppCompatActivity {
             return true;
         } else {
             return false;
+        }
+    }
+
+    public void update(View view) {
+        if (isNameChanged() || isEmailChanged() || isMotorcycleChanged() || isPasswordChanged()) {
+            Toast.makeText(this, "Data has been Updated Successfully", Toast.LENGTH_LONG).show();
+        } else {
+            Toast.makeText(this, "Data is the Same and therefore Cannot be Updated", Toast.LENGTH_LONG).show();
         }
     }
 }

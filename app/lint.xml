@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="IconLocation">
+        <ignore path="src/main/res/drawable/email.png" />
+        <ignore path="src/main/res/drawable/email.png" />
+        <ignore path="src/main/res/drawable/email.png" />
+        <ignore path="src/main/res/drawable/email.png" />
+        <ignore path="src/main/res/drawable/moto.png" />
+        <ignore path="src/main/res/drawable/moto.png" />
+        <ignore path="src/main/res/drawable/motorcycle.png" />
+        <ignore path="src/main/res/drawable/password.png" />
+        <ignore path="src/main/res/drawable/placeholder.png" />
+        <ignore path="src/main/res/drawable/user.png" />
+    </issue>
+</lint>

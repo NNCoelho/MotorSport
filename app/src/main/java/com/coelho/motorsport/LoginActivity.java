@@ -94,14 +94,6 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
-    public void loginUser(View view) {
-        if (!validateUsername() | !validatePassword()) {
-            return;
-        } else {
-            isUser();
-        }
-    }
-
     private void isUser() {
 
         final String usernameInput = Objects.requireNonNull(username.getEditText()).getText().toString().trim();
@@ -153,5 +145,13 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    public void loginUser(View view) {
+        if (!validateUsername() | !validatePassword()) {
+            return;
+        } else {
+            isUser();
+        }
     }
 }

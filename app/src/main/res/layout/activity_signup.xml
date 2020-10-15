@@ -23,7 +23,6 @@
             tools:targetApi="lollipop" />
 
         <TextView
-            android:id="@+id/textWelcome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/bungee"
@@ -36,7 +35,6 @@
             tools:targetApi="lollipop" />
 
         <TextView
-            android:id="@+id/textSignup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="start"
@@ -47,7 +45,6 @@
             tools:targetApi="lollipop" />
 
         <LinearLayout
-            android:id="@+id/layoutSignup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
