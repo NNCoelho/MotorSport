@@ -135,7 +135,7 @@ public class SignupActivity extends AppCompatActivity {
                 if (!validateName() | !validateUsername() | !validateEmail() | !validateLocation() | !validateMotorcycle() | !validatePassword()) {
                     return;
                 } else {
-                    Toast.makeText(SignupActivity.this, "User Successfully Registered on the Database", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SignupActivity.this, "User Successfully Registered on the Database!\n Please proceed to Login!", Toast.LENGTH_SHORT).show();
                 }
 
                 // Get all the values
