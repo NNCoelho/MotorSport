@@ -10,7 +10,7 @@ import com.google.android.material.textfield.TextInputLayout;
 public class UserprofileActivity extends AppCompatActivity {
 
     TextView fullName, userName, location, motorcycle;
-    TextInputLayout fullNameInput, emailInput, localizationInput, motorcycleInput, passwordInput;
+    TextInputLayout fullNameInput, emailInput, motorcycleInput, passwordInput;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +23,6 @@ public class UserprofileActivity extends AppCompatActivity {
         motorcycle = findViewById(R.id.profileMotorcycle);
         fullNameInput = findViewById(R.id.profile_FullName);
         emailInput = findViewById(R.id.profile_Email);
-        localizationInput = findViewById(R.id.profile_Localization);
         motorcycleInput = findViewById(R.id.profile_Motorcycle);
         passwordInput = findViewById(R.id.profile_Password);
     }
