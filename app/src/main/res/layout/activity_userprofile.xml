@@ -224,6 +224,7 @@
                 android:background="#fece2f"
                 android:fontFamily="@font/bungee"
                 android:includeFontPadding="false"
+                android:onClick="update"
                 android:text="@string/update"
                 android:textSize="18sp" />
 
