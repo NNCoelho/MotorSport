@@ -31,7 +31,7 @@
         android:gravity="center"
         android:includeFontPadding="false"
         android:text="@string/motorsport_club"
-        android:textSize="57sp"
+        android:textSize="54sp"
         android:transitionName="welcome_text"
         app:layout_constraintBottom_toTopOf="@id/motorsportSlogan"
         app:layout_constraintEnd_toEndOf="parent"

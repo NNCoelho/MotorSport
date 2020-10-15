@@ -1,5 +1,6 @@
 package com.coelho.motorsport;
 
+@SuppressWarnings("unused")
 public class UserHelperClass {
 
     String name, username, email, location, motorcycle, password;
