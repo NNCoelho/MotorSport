@@ -67,48 +67,20 @@ public class UserprofileActivity extends AppCompatActivity {
         Objects.requireNonNull(passwordInput.getEditText()).setText(_PASSWORD);
     }
 
-    private boolean isNameChanged() {
-        if (!_NAME.equals(Objects.requireNonNull(fullNameInput.getEditText()).getText().toString())) {
+    public void updateProfile(View view) {
+
+        if (!_NAME.equals(Objects.requireNonNull(fullNameInput.getEditText()).getText().toString()) ||
+                !_EMAIL.equals(Objects.requireNonNull(emailInput.getEditText()).getText().toString()) ||
+                !_MOTORCYCLE.equals(Objects.requireNonNull(motorcycleInput.getEditText()).getText().toString()) ||
+                !_PASSWORD.equals(Objects.requireNonNull(passwordInput.getEditText()).getText().toString())) {
+
             reference.child(_USERNAME).child("name").setValue(fullNameInput.getEditText().getText().toString());
-            fullName.setText(_NAME);
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    private boolean isEmailChanged() {
-        if (!_EMAIL.equals(Objects.requireNonNull(emailInput.getEditText()).getText().toString())) {
             reference.child(_USERNAME).child("email").setValue(emailInput.getEditText().getText().toString());
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    private boolean isMotorcycleChanged() {
-        if (!_MOTORCYCLE.equals(Objects.requireNonNull(motorcycleInput.getEditText()).getText().toString())) {
             reference.child(_USERNAME).child("motorcycle").setValue(motorcycleInput.getEditText().getText().toString());
-            motorcycle.setText(_MOTORCYCLE);
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    private boolean isPasswordChanged() {
-        if (!_PASSWORD.equals(Objects.requireNonNull(passwordInput.getEditText()).getText().toString())) {
             reference.child(_USERNAME).child("password").setValue(passwordInput.getEditText().getText().toString());
-            _PASSWORD = passwordInput.getEditText().getText().toString();
-            return true;
-        } else {
-            return false;
-        }
-    }
 
-    public void update(View view) {
-        if (isNameChanged() || isEmailChanged() || isMotorcycleChanged() || isPasswordChanged()) {
             Toast.makeText(this, "Data has been Updated Successfully", Toast.LENGTH_LONG).show();
+
         } else {
             Toast.makeText(this, "Data is the Same and therefore Cannot be Updated", Toast.LENGTH_LONG).show();
         }
