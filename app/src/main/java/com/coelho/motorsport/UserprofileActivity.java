@@ -68,19 +68,16 @@ public class UserprofileActivity extends AppCompatActivity {
     }
 
     public void updateProfile(View view) {
-
         if (!_NAME.equals(Objects.requireNonNull(fullNameInput.getEditText()).getText().toString()) ||
                 !_EMAIL.equals(Objects.requireNonNull(emailInput.getEditText()).getText().toString()) ||
                 !_MOTORCYCLE.equals(Objects.requireNonNull(motorcycleInput.getEditText()).getText().toString()) ||
                 !_PASSWORD.equals(Objects.requireNonNull(passwordInput.getEditText()).getText().toString())) {
 
             reference.child(_USERNAME).child("name").setValue(fullNameInput.getEditText().getText().toString());
-            reference.child(_USERNAME).child("email").setValue(emailInput.getEditText().getText().toString());
-            reference.child(_USERNAME).child("motorcycle").setValue(motorcycleInput.getEditText().getText().toString());
-            reference.child(_USERNAME).child("password").setValue(passwordInput.getEditText().getText().toString());
-
+            reference.child(_USERNAME).child("email").setValue(Objects.requireNonNull(emailInput.getEditText()).getText().toString());
+            reference.child(_USERNAME).child("motorcycle").setValue(Objects.requireNonNull(motorcycleInput.getEditText()).getText().toString());
+            reference.child(_USERNAME).child("password").setValue(Objects.requireNonNull(passwordInput.getEditText()).getText().toString());
             Toast.makeText(this, "Data has been Updated Successfully", Toast.LENGTH_LONG).show();
-
         } else {
             Toast.makeText(this, "Data is the Same and therefore Cannot be Updated", Toast.LENGTH_LONG).show();
         }

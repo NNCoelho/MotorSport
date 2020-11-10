@@ -19,7 +19,7 @@ public class SignupActivity extends AppCompatActivity {
     TextInputLayout regName, regUsername, regEmail, regLocation, regMoto, regPassword;
     Button regBtn, regToLoginBtn;
 
-    // FIREABSE CONNECTION
+    // FIREBASE CONNECTION
     FirebaseDatabase rootNode;
     DatabaseReference reference;
 
@@ -101,7 +101,7 @@ public class SignupActivity extends AppCompatActivity {
             regPassword.setError("Field cannot be empty");
             return false;
         } else if (!val.matches(passwordVal)) {
-            regPassword.setError("Password is to weak");
+            regPassword.setError("Password is too weak");
             return false;
         } else {
             regPassword.setError(null);

@@ -1,12 +1,8 @@
 package com.coelho.motorsport;
 
-@SuppressWarnings("unused")
 public class UserHelperClass {
 
     String name, username, email, location, motorcycle, password;
-
-    public UserHelperClass() {
-    }
 
     public UserHelperClass(String name, String username, String email, String location, String motorcycle, String password) {
         this.name = name;
